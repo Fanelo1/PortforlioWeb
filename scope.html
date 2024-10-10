@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botium Toys: Cyber Risk Report</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            background-color: var(--accent-color);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Botium Toys: Cyber Risk Report</h1>
+        <p>Improving Security Posture</p>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2>Scope and Goals</h2>
+            <h3>Scope:</h3>
+            <p>The entire security program at Botium Toys, including employee equipment, internal network, and systems.</p>
+            <h3>Goals:</h3>
+            <p>Assess existing assets and complete the controls and compliance checklist to determine necessary improvements for Botium Toys' security posture.</p>
+        </section>
+
+        <section class="section">
+            <h2>Current Assets</h2>
+            <ul>
+                <li>On-premises equipment for in-office business needs</li>
+                <li>Employee equipment (end-user devices, remote workstations, etc.)</li>
+                <li>Storefront products (on-site and online)</li>
+                <li>Management systems and software</li>
+                <li>Internet access and internal network</li>
+                <li>Data retention and storage</li>
+                <li>Legacy system maintenance</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Risk Assessment</h2>
+            <h3>Risk Description:</h3>
+            <p>Inadequate asset management and lack of proper controls, potentially non-compliant with U.S. and international regulations.</p>
+            <h3>Control Best Practices:</h3>
+            <p>Implement the NIST CSF, starting with the Identify function to manage assets effectively.</p>
+            <h3>Risk Score:</h3>
+            <p>8 out of 10 (high) due to lack of controls and compliance adherence.</p>
+        </section>
+
+        <section class="section">
+            <h2>Key Findings</h2>
+            <ul>
+                <li>All employees have access to internally stored data, including cardholder data and PII/SPII</li>
+                <li>Lack of encryption for customers' credit card information</li>
+                <li>Absence of access controls (least privilege and separation of duties)</li>
+                <li>No disaster recovery plans or critical data backups</li>
+                <li>Weak password policy and lack of centralized password management</li>
+                <li>Irregular maintenance schedule for legacy systems</li>
+                <li>Adequate physical security measures in place</li>
+            </ul>
+        </section>
+
+        <a href="pdfs/Botium Toys_ Scope, goals, and risk assessment report.pdf" class="download-btn" download>Download Full Report PDF</a>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Fanelo Mabasa. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

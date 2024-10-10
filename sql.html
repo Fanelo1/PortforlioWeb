@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Data Manipulation Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            background-color: var(--accent-color);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SQL Data Manipulation Projects</h1>
+        <p>Improving Security Posture and Database Management</p>
+    </header>
+
+    <main>
+        <section class="project">
+            <h2>Project 1: SQL Querying and Database Manipulation</h2>
+            <p>This project encompasses a variety of functionalities and includes SQL filter commands, demonstrating proficiency in SQL querying and database manipulation.</p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Retrieving Customer Information</li>
+                <li>Fetching Product Details by Category</li>
+                <li>Finding Orders Placed Within a Specific Date Range</li>
+                <li>Updating Employee Information</li>
+                <li>Inserting New Products or Customers Into the Database</li>
+                <li>Deleting Outdated Records</li>
+                <li>Joining Multiple Tables to Generate Reports</li>
+            </ul>
+            <p>This project showcases advanced SQL skills, including the use of filter commands to retrieve, manipulate, and analyze data within a relational database environment.</p>
+            <a href="pdfs/SQL querying and database manipulation (1).pdf" class="download-btn" download>Download Project 1 PDF</a>
+        </section>
+
+        <section class="project">
+            <h2>Project 2: Applying Filters to SQL Queries for Security</h2>
+            <p>This project focuses on using SQL with filters to perform security-related tasks and investigate potential security issues.</p>
+            <h3>Key Tasks:</h3>
+            <ul>
+                <li>Retrieve after-hours failed login attempts</li>
+                <li>Retrieve login attempts on specific dates</li>
+                <li>Retrieve login attempts outside of Mexico</li>
+                <li>Retrieve employees in specific departments (Marketing, Finance, Sales)</li>
+                <li>Retrieve all employees not in IT</li>
+            </ul>
+            <p>This project demonstrates the application of SQL filters to extract specific information from log_in_attempts and employees tables, using various operators like AND, OR, NOT, and LIKE for precise data retrieval.</p>
+            <a href="pdfs/filters-to-SQL-queries.pdf" class="download-btn" download>Download Project 2 PDF</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fanelo Mabasa. All rights reserved.</p>
+    </footer>
+</body>
+</html>

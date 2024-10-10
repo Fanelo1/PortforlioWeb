@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux File Permissions Project</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            background-color: var(--accent-color);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Linux File Permissions</h1>
+        <p>Improving Security Posture</p>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2>Overview</h2>
+            <p>This project focuses on updating file permissions for certain files and directories within the projects directory to reflect the appropriate level of authorization, enhancing system security.</p>
+            
+            <h2>Key Tasks</h2>
+            <ul>
+                <li>Check file and directory details</li>
+                <li>Describe the permissions string</li>
+                <li>Change file permissions</li>
+                <li>Change file permissions on a hidden file</li>
+                <li>Change directory permissions</li>
+            </ul>
+
+            <h2>Technologies Used</h2>
+            <ul>
+                <li>Linux command-line interface</li>
+                <li>chmod command</li>
+                <li>ls command</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Project Details</h2>
+            
+            <h3>Checking File and Directory Details</h3>
+            <p>Used the <code>ls -la</code> command to display a detailed listing of file contents, including hidden files.</p>
+
+            <h3>Understanding Permissions String</h3>
+            <p>Explained the 10-character string representing file permissions, including file type and read, write, and execute permissions for user, group, and other.</p>
+
+            <h3>Changing File Permissions</h3>
+            <p>Used the <code>chmod</code> command to modify permissions on various files, including removing write access for 'other' users.</p>
+
+            <h3>Handling Hidden Files</h3>
+            <p>Modified permissions on a hidden file (.project_x.txt) to remove write access and adjust read permissions.</p>
+
+            <h3>Directory Permissions</h3>
+            <p>Adjusted permissions on the 'drafts' directory to restrict access to only the researcher2 user.</p>
+        </section>
+
+        <section class="section">
+            <h2>Summary</h2>
+            <p>This project demonstrated the process of checking and modifying file and directory permissions in a Linux environment to match the organization's desired level of authorization. It involved using commands like <code>ls -la</code> to check existing permissions and <code>chmod</code> to make necessary changes, enhancing the overall security posture of the projects directory.</p>
+        </section>
+
+        <a href="pdfs/File_permissions.pdf" class="download-btn" download>Download Full Project PDF</a>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Fanelo Mabasa. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
